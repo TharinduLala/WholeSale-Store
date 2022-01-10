@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminDashboardContext" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminDashBoardFormController">
+   <children>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#7f8c8d" height="400.0" layoutX="-10.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="230.0" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <ImageView fitHeight="123.0" fitWidth="132.0" layoutX="43.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/userImage.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblUserName" alignment="CENTER" layoutX="73.0" layoutY="254.0" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="290.0" layoutY="153.0" onAction="#openManageItemsAction" prefHeight="50.0" prefWidth="450.0" ripplerFill="WHITE" style="-fx-background-color: #2c3e50; -fx-background-radius: 10;" text="Manage Items" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="175.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="175.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="290.0" layoutY="299.0" onAction="#openSystemReportsAction" prefHeight="50.0" prefWidth="450.0" ripplerFill="WHITE" style="-fx-background-color: #2c3e50; -fx-background-radius: 10;" text="System Reports" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="65.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="285.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="lblDate" layoutX="56.0" layoutY="83.0" prefHeight="27.0" prefWidth="99.0" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="22.0" layoutY="19.0" prefHeight="53.0" prefWidth="180.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="289.0" layoutY="85.0" onAction="#openAddNewItemActionh" prefHeight="50.0" prefWidth="450.0" ripplerFill="WHITE" style="-fx-background-color: #2c3e50; -fx-background-radius: 10;" text="+ New Item" textAlignment="CENTER" textFill="WHITE" AnchorPane.bottomAnchor="285.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="65.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="75.0" layoutY="310.0" onMouseClicked="#logOutAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/logOutIcon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="79.0" layoutY="372.0" text="Log Out" />
+   </children>
+</AnchorPane>
